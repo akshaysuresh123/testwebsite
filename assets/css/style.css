@@ -4291,12 +4291,10 @@ select {
 @media  screen and (max-width: 479px) {
   .whatsapp_float {
     position:fixed;
-    bottom: 40px;
-    display: block;
-    z-index: 999;
+    font-size: 20px;
+    line-height: 50px;
     width: 50px;
     height: 50px;
-    right: 20px;
   }
 }
 
