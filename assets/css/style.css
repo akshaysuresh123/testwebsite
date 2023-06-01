@@ -4286,6 +4286,14 @@ select {
   right: 35px;
 
 }
+@media only screen and (max-width: 479px) {
+  .whatsapp_float {
+    font-size: 20px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+  }
+}
 .space__inner--x35 {
   padding-right: 35px;
   padding-left: 35px;
