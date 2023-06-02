@@ -4289,12 +4289,12 @@ select {
   right: 20px;
 
 }
-@media  screen and (max-width: 479px) {
+@media  screen and (max-width: 469px) {
   .whatsapp_float {
     position:fixed;
     font-size: 15px;
-    line-height: 50px;
-    bottom: 70px;
+    line-height: 55px;
+    bottom: 75px;
     width: 30px;
     height: 30px;
   }
