@@ -4282,6 +4282,7 @@ select {
   position:fixed;
   width: 60px;
   height: 60px;
+  border-radius: 50%;
   bottom: 60px;
   display: block;
   z-index: 999;
