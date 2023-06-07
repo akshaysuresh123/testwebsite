@@ -3913,7 +3913,7 @@
 
 html,
 body {
-  height: 100%;
+  height: auto;
 }
 
 body {
@@ -4224,6 +4224,35 @@ select {
 /*=============================================
 =            spacing            =
 =============================================*/
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .space__inner--y250 {
+    margin-top: 150px;
+    
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 2091px) {
+  .space__inner--y250 {
+    margin-top: 250px;
+    
+  }
+}
+@media only screen and (max-width: 767px) {
+  .space__inner--y250 {
+    margin-top: 80px;
+    
+  }
+}
+@media only screen and (max-width: 575px) {
+  .space__inner--y250 {
+    margin-top: 30px;
+    
+  }
+}
+
+
+
 .space__inner--y10 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -4314,6 +4343,9 @@ select {
 .space__inner__top--50 {
   padding-top: 50px;
 }
+.space__inner__top--80 {
+  padding-top: 60px;
+}
 .space__inner__top--60 {
   padding-top: 60px;
 }
@@ -4397,6 +4429,9 @@ select {
     margin-top: 0;
   }
 }
+.space__bottom--0 {
+  margin-bottom: 0px;
+}
 .space__bottom--10 {
   margin-bottom: 10px;
 }
@@ -4441,6 +4476,10 @@ select {
 }
 .space__bottom--r120 {
   margin-bottom: 120px;
+  
+}
+.space__bottom--rel {
+  margin-bottom: auto;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .space__bottom--r120 {
@@ -5618,38 +5657,55 @@ right: 0px;
 /*=============================================
 =            breadcrumb            =
 =============================================*/
-.page-breadcrumb {
-  position: relative;
+/* .page-breadcrumb {
+  position: absolute;
   z-index: 1;
+  width: 100%;
+  
   padding: 125px 0 70px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
-}
-.page-breadcrumb::before {
-  position: absolute;
-  z-index: -1;
+  background-size: contain;
+  background-color: #386cb1;
+} */
+.page-breadcrumb {
+  position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   content: "";
-  opacity: 0.75;
-  background-color: #1350a0;
+  margin-top: auto;
+ 
+  background-color: #386cb1;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .page-breadcrumb {
-    padding: 60px 0 65px;
+    position: fixed;
+    padding: 30px 0 65px;
+    margin-top: 116px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 2091px) {
+  .page-breadcrumb {
+    position: fixed;
+    padding: 30px 0 65px;
+    margin-top: 116px;
+    z-index: 999;
   }
 }
 @media only screen and (max-width: 767px) {
   .page-breadcrumb {
-    padding: 40px 0 45px;
+    position: relative;
+    padding: 30px 0 45px;
   }
 }
 @media only screen and (max-width: 575px) {
   .page-breadcrumb {
-    padding: 25px 0 30px;
+    position: relative;
+    
+    padding: 30px 0 30px;
   }
 }
 
@@ -6400,6 +6456,7 @@ right: 0px;
           transition-duration: 0.3s;
   background-color: #FFFFFF;
 }
+
 @media only screen and (max-width: 479px) {
   .single-project-wrapper:before {
     left: 30px;
