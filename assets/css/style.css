@@ -5265,7 +5265,7 @@ right: 0px;
 @media only screen and (max-width: 767px) {
   .single-footer-contact__text {
     line-height: 1.2;
-    font-size: 16px;
+    font-size: 18px;
     -ms-flex-preferred-size: calc(100% - 20px);
         flex-basis: calc(100% - 20px);
     margin-left: 10px;
