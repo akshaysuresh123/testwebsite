@@ -4234,13 +4234,13 @@ select {
 }
 @media only screen and (min-width: 992px) and (max-width: 2091px) {
   .space__inner--y250 {
-    margin-top: 250px;
+    margin-top: 200px;
     
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen  and (min-width: 575px) and (max-width: 767px) {
   .space__inner--y250 {
-    margin-top: 80px;
+    margin-top: 60px;
     
   }
 }
@@ -4547,12 +4547,12 @@ right: 0px;
   padding-right: 15px;
   padding-left: 15px;
 } */
-@media only screen and (min-width: 792px) and (max-width: 1199px) {
+@media only screen and (min-width: 1389px) and (max-width: 2199px) {
   .header-sticky.is-sticky .menu-bar-wrapper-inner {
-    max-width: 960px;
+    width: 100%;
   }
 }
-@media only screen  and (max-width: 767px) {
+@media only screen  and (max-width: 1388px) {
   .header-sticky.is-sticky.mobile-header {
     position: fixed;
     z-index: 999;
@@ -4565,6 +4565,20 @@ right: 0px;
             animation: 0.95s ease-in-out 0s normal none 1 running fadeInTop;
   }
 }
+
+
+@media only screen and (min-width: 1389px) {
+  .setpad{
+    padding-left: 400px;
+  }
+}
+
+@media only screen and (min-width: 1389px) {
+  .setimage{
+    margin-left: 310px
+  }
+}
+
 
 
 /* header top */
@@ -4608,10 +4622,12 @@ right: 0px;
   margin-right: 0;
 }
 .main-nav-menu > ul > li > a {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 400;
   line-height: 90px;
   position: relative;
+  font-family: "karlaregular";
+  color: #386cb1;
 }
 .main-nav-menu > ul > li > a:hover {
   color: #2B2D37;
@@ -4622,17 +4638,17 @@ right: 0px;
   bottom: 0;
   left: auto;
   width: 0;
-  height: 3px;
+  height: -2px;
   content: "";
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-color: #2B2D37;
+  background-color: darkorange;
 }
 .main-nav-menu > ul > li.has-sub-menu {
   position: relative;
 }
 .main-nav-menu > ul > li.has-sub-menu:after {
-  font-family: FontAwesome;
+  font-family: "karlaregular";
   font-size: 15px;
   position: absolute;
   top: 50%;
@@ -5266,6 +5282,7 @@ right: 0px;
   .single-footer-contact__text {
     line-height: 1.2;
     font-size: 18px;
+    font-family: "karlaregular";
     -ms-flex-preferred-size: calc(100% - 20px);
         flex-basis: calc(100% - 20px);
     margin-left: 10px;
@@ -5290,6 +5307,7 @@ right: 0px;
 }
 .single-footer-contact__text {
   line-height: 1.2;
+  font-family: "karlaregular";
   -ms-flex-preferred-size: calc(100% - 20px);
       flex-basis: calc(100% - 20px);
   margin-left: 15px;
@@ -5750,9 +5768,9 @@ right: 0px;
 
 /*-- Page Breadcrumb --*/
 .page-breadcrumb-content h1 {
-  font-size: 48px;
+  font-size: 40px;
   font-family: "karlabold";
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.1px;
   color: #FFFFFF;
 }
@@ -5776,13 +5794,14 @@ right: 0px;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+          justify-content: left;
   list-style: none;
 }
 .page-breadcrumb-links li {
   font-weight: 400;
   line-height: 1;
   margin-top: 10px;
+  font-family: "karlaregular";
   letter-spacing: 0.5px;
   color: #FFFFFF;
 }
@@ -6131,7 +6150,7 @@ right: 0px;
   }
 }
 .hero-slider-content__title {
-  font-size: 60px;
+  font-size: 50px;
   text-align: start;
   line-height: 1;
   color: #FCFCFC;
@@ -7490,11 +7509,13 @@ blockquote.blockquote .author {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-information {
     margin-bottom: 50px;
+    font-family: "karlaregular";
   }
 }
 @media only screen and (max-width: 767px) {
   .contact-information {
     font-size: 14px;
+    font-family: "karlaregular";
     margin-bottom: 30px;
   }
 }
@@ -7504,18 +7525,22 @@ blockquote.blockquote .author {
 .contact-information ul li {
   display: -webkit-box;
   display: -ms-flexbox;
+  font-family: "karlaregular";
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 30px;
 }
 .contact-information ul li:last-child {
+  font-family: "karlaregular";
   margin-bottom: 0;
 }
 .contact-information ul li .icon {
+  
   width: 50px;
 }
 .contact-information ul li .icon i {
+  
   font-size: 30px;
 }
 .contact-information ul li .text {
