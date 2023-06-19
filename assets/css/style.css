@@ -4234,7 +4234,7 @@ select {
 }
 @media only screen and (min-width: 992px) and (max-width: 2091px) {
   .space__inner--y250 {
-    margin-top: 200px;
+    margin-top: 150px;
     
   }
 }
@@ -4478,6 +4478,10 @@ select {
   margin-bottom: 120px;
   
 }
+.space__bottom--r100 {
+  margin-bottom: 100px;
+  
+}
 .space__bottom--rel {
   margin-bottom: auto;
 }
@@ -4591,14 +4595,14 @@ right: 0px;
   font-weight: 500;
 }
 .header-top-info__link:hover {
-  color: #FABC3D;
+  color: #242322;
 }
 .header-top-info__link span {
   font-weight: 600;
   color: #E4E1E1;
 }
 .header-top-info__link span:hover {
-  color: #FABC3D;
+  color: #2c2b2a;
 }
 
 /* menubar wrapper */
@@ -4617,9 +4621,11 @@ right: 0px;
 /* navigation menu */
 .main-nav-menu > ul > li {
   margin-right: 40px;
+  font-family: "karlaregular";
 }
 .main-nav-menu > ul > li:last-child {
   margin-right: 0;
+  font-family: "karlaregular";
 }
 .main-nav-menu > ul > li > a {
   font-size: 17px;
@@ -4642,7 +4648,7 @@ right: 0px;
   content: "";
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-color: darkorange;
+  background-color: rgb(53, 52, 52);
 }
 .main-nav-menu > ul > li.has-sub-menu {
   position: relative;
@@ -4718,7 +4724,7 @@ right: 0px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 0;
-  border-bottom: 3px solid #FABC3D;
+  border-bottom: 3px solid #292827;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
@@ -4735,7 +4741,7 @@ right: 0px;
 }
 .sub-menu li:hover > a {
   padding-left: 25px;
-  color: #FABC3D;
+  color: #2c2c2b;
 }
 
 /* nav search icon */
@@ -5050,7 +5056,7 @@ right: 0px;
   color: #386cb1;
 }
 .offcanvas-navigation > ul > li > a:hover {
-  color: #FABC3D;
+  color: #313130;
 }
 @media only screen and (max-width: 479px) {
   .offcanvas-navigation > ul > li > a {
@@ -5747,7 +5753,7 @@ right: 0px;
 @media only screen and (min-width: 992px) and (max-width: 2091px) {
   .page-breadcrumb {
     position: fixed;
-    padding: 20px 0 25px;
+    padding: 10px 0 5px;
     margin-top: 116px;
     z-index: 999;
   }
@@ -5755,7 +5761,7 @@ right: 0px;
 @media only screen and (max-width: 991px) {
   .page-breadcrumb {
     position: relative;
-    padding: 25px 0 25px;
+    padding: 10px 0 5px;
   }
 }
 /* @media only screen and (max-width: 575px) {
@@ -5768,7 +5774,7 @@ right: 0px;
 
 /*-- Page Breadcrumb --*/
 .page-breadcrumb-content h1 {
-  font-size: 40px;
+  font-size: 25px;
   font-family: "karlabold";
   font-weight: 500;
   letter-spacing: 0.1px;
@@ -5800,7 +5806,8 @@ right: 0px;
 .page-breadcrumb-links li {
   font-weight: 400;
   line-height: 1;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 8px;
   font-family: "karlaregular";
   letter-spacing: 0.5px;
   color: #FFFFFF;
